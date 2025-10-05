@@ -1,0 +1,11 @@
+<Solution>
+  <Folder Name="/Itens de Solução/">
+    <File Path="README.txt" />
+  </Folder>
+  <Project Path="searchemployees.client/SearchEmployees.WebApp.esproj">
+    <Build />
+    <Deploy />
+  </Project>
+  <Project Path="SearchEmployees.Server/SearchEmployees.WebAPI.csproj" />
+  <Project Path="SearchEmployees.Tests/SearchEmployees.Tests.csproj" Id="c4d10c53-57ba-4a19-a927-3682fec21d40" />
+</Solution>

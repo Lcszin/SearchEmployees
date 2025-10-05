@@ -1,0 +1,6 @@
+@SearchEmployees.Server_HostAddress = http://localhost:5200
+
+GET {{SearchEmployees.Server_HostAddress}}/api/usuarios
+Accept: application/json
+
+###

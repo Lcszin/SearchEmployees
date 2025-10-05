@@ -1,0 +1,30 @@
+<div class="container">
+  <h1>Consulta e Exportação de Usuários</h1>
+
+  <div class="botoes-container">
+    <button (click)="buscarUsuarios()">Buscar Usuários</button>
+
+    <button *ngIf="usuarios.length > 0" (click)="exportarParaCsv()">Exportar para CSV</button>
+  </div>
+
+  <div *ngIf="usuarios.length > 0" class="tabela-container">
+    <table>
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>Nome</th>
+          <th>Email</th>
+          <th>Cidade</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let usuario of usuarios">
+          <td>{{ usuario.id }}</td>
+          <td>{{ usuario.nome }}</td>
+          <td>{{ usuario.email }}</td>
+          <td>{{ usuario.cidade }}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
